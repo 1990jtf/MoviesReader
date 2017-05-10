@@ -1,0 +1,20 @@
+<view class="my-container">
+    <view class="my-head">
+        <view class="userinfo">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <view class="user-right">
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            <text class="profile">这位同学很懒，木有签名的说～</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="my-look">
+        <icon class="my-look-icon" type="success" size="13" color="black"/><text>看过的电影</text>
+    </view>
+
+    <view class="my-look">
+        <icon class="my-look-icon" type="success" size="13" color="black"/><text>评价过的电影</text>
+    </view>
+
+</view>

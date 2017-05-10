@@ -1,0 +1,21 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+<view class="detail-wrap">
+  <image class="detail-img" src="{{isPlaying?currentNews.music.coverImg : currentNews.news_img}}"></image>
+  <image catchtap="onMusicTap" class="music-icon" src="{{isPlaying?'/images/music/music-stop.png':'/images/music/music.png'}}"></image>
+  <view class="author-date">
+    <image class="detail-avatar" src="{{currentNews.news_author_img}}"></image>
+    <text class="detail-author">{{currentNews.news_author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="detail-date">{{currentNews.news_date2}}</text>
+  </view>
+  <text class="detail-title">{{currentNews.news_title}}</text>
+  <view class="detail-tool">
+        <image class="detail-share" src="../../../images/icon/share.png"></image>
+        <image wx:if="{{isCollected}}" catchtap="onCollectedTap" class="detail-collection" src="../../../images/icon/collection.png"></image>
+        <image wx:else catchtap="onCollectedTap" class="detail-collection" src="../../../images/icon/collection-anti.png"></image>
+        <view class="detail-hr"></view>
+  </view>
+  <view class="detail-content">
+    <text>{{currentNews.news_content}}</text>
+  </view>
+</view>

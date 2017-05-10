@@ -1,0 +1,27 @@
+<import src="movie-list/movie-list-template.wxml" />
+<import src="movie-grid/movie-grid-template.wxml" />
+<view class="search">
+  <icon type="search" size="13" color="#333" class="search-img" />
+  <input type="text" placeholder="搜索" bindblur="onBindBlur" bindfocus="onBindFoucs" placeholder-class="placeholder" />
+  <icon type="clear" size="18" color="#333" class="clear-img" bindtap="onCloseTap" wx:if="{{searchPanelShow}}"/>
+  
+</view>
+<view class="movies-warp" wx:if="{{containerShow}}">
+  <view class="movies-template">
+    <!-- 展开相当于包含一个movies数组-->
+    <template is="movie-list-template" data="{{...inTheaters}}"></template>
+  </view>
+  <view class="movies-template">
+    <template is="movie-list-template" data="{{...comingSoon}}"></template>
+  </view>
+  <view class="movies-template">
+    <template is="movie-list-template" data="{{...top250}}"></template>
+  </view>
+</view>
+
+<!--搜索-->
+<view class="movies-warp" wx:if="{{searchPanelShow}}">
+  <view class="search-panel">
+    <template is="movieGridTemplate" data="{{...searchResult}}"></template>
+  </view>
+</view>

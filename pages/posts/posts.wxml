@@ -1,0 +1,27 @@
+<import src="post-item/post-item-template.wxml" />
+
+<!-- 轮播图 start-->
+<view>
+  <swiper indicator-dots="true" autoplay="true">
+    <swiper-item>
+      <image src="/images/wx.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/iqiyi.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 轮播图 end-->
+
+  <!-- 新闻列表 start -->
+  <block wx:for="{{ newContent }}" wx:for-item="item">
+    <view catchtap="onDetailTap" data-newsid="{{item.news_id}}">
+      <template is="news-item" data="{{...item}}"></template>
+    </view>
+  </block>
+
+  <!-- 新闻列表 end -->
+</view>

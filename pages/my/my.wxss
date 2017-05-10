@@ -1,0 +1,62 @@
+.userinfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 140rpx;
+    color: #666;
+}
+
+.my-container {
+    padding-top: 40rpx;
+    background: #f2f2f2;
+    height: 1300rpx;
+}
+
+.my-head {
+    background: #fff;
+    margin-bottom: 40rpx;
+}
+
+.userinfo-avatar {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 20rpx;
+    border-radius: 5%;
+    vertical-align: middle;
+}
+
+.user-right {
+    display: flex;
+    flex-direction: column;
+    margin: 20rpx 10rpx;
+}
+
+.userinfo-nickname {
+    font-size: 32rpx;
+    margin-bottom: 10rpx;
+}
+
+.profile {
+    font-size: 24rpx;
+}
+
+.my-look {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80rpx;
+    background: #fff;
+    margin-bottom: 40rpx;
+    border-top: 1px solid gary;
+    border-bottom: 1px solid gary;
+}
+
+.my-look-icon {
+    margin-top: 26rpx;
+    margin-left: 10px;
+}
+
+.my-look text {
+    line-height: 80rpx;
+    margin-left: 8px;
+}
