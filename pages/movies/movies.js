@@ -12,9 +12,9 @@ Page({
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
-    var inTheatersUrl = app.globalData.g_url+"/v2/movie/in_theaters"+"?start=0&count=3";
-    var comingSoonUrl = app.globalData.g_url+"/v2/movie/coming_soon"+"?start=0&count=3";
-    var top250Url = app.globalData.g_url+"/v2/movie/top250"+"?start=0&count=3";  
+    var inTheatersUrl = app.globalData.g_url+"/v2/movie/in_theaters"+"?start=0&count=6";
+    var comingSoonUrl = app.globalData.g_url+"/v2/movie/coming_soon"+"?start=0&count=6";
+    var top250Url = app.globalData.g_url+"/v2/movie/top250"+"?start=0&count=6";  
 
     this.getMoviesListData(inTheatersUrl,"inTheaters","正在热映");
     this.getMoviesListData(comingSoonUrl,"comingSoon","即将上映");
